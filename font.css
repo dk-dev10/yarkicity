@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Geometri';
+  src: url('./assets/font/geometria_medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Geometri';
+  src: url('./assets/font/geometria_light.otf') format('opentype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Geometri';
+  src: url('./assets/font/geometria_bold.otf') format('opentype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Geometri';
+  src: url('./assets/font/geometria_extrabold.otf') format('opentype');
+  font-weight: 800;
+}

@@ -1,10 +1,143 @@
+@import url('./font.css');
+
+:root {
+  --clr-green: #82b428;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Geometri';
 }
 
 html,
 body {
+  width: 100%;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+section {
+  padding-top: 100px;
+}
+
+.section__title {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: var(--clr-green);
+}
+
+.header {
+  background-image: url('./assets/img/home_bg.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  padding: 125px 0 172px 0;
+}
+
+.circle {
+  height: 664px;
+  width: 664px;
+  border-radius: 50%;
+  background: linear-gradient(147.64deg, #ffffff 13.56%, #f1f1f1 85.54%);
+  transform: translateX(-145px);
+  padding: 105px 0 0 145px;
+  position: relative;
+}
+.circle::before {
+  display: block;
+  content: '';
+  height: 268px;
+  width: 268px;
+  background: linear-gradient(147.64deg, #c5d210 13.56%, #82b428 85.54%);
+  border-radius: 50%;
+  position: absolute;
+  top: -48px;
+  right: -110px;
+}
+.circle::after {
+  display: block;
+  content: '';
+  height: 105px;
+  width: 105px;
+  background: linear-gradient(147.64deg, #8dceed 13.56%, #2da3dc 85.54%);
+  border-radius: 50%;
+  position: absolute;
+  top: 220px;
+  right: -185px;
+}
+
+.circle h2 {
+  font-family: 'Geometri';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: var(--clr-green);
+  font-weight: 800;
+
+  margin: 35px 0 22px 0;
+}
+.circle p {
+  max-width: 403px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 110%;
+}
+
+.circle button {
+  border: none;
+  color: white;
+  font-size: 20px;
+  line-height: 30px;
+
+  width: 275px;
+  height: 51px;
+  left: 408px;
+  top: 660px;
+
+  background: linear-gradient(34.66deg, #bc1822 16.88%, #e53322 76%);
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+
+  margin-top: 21px;
+}
+
+/* SECTION YARKI */
+.section_yarki {
+  display: flex;
+}
+
+.section_yarki div:first-child {
+  margin-right: 40px;
+  width: 419px;
+}
+.section_yarki h3 {
+  margin-bottom: 40px;
+}
+.section_yarki p {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+.section_yarki p:last-child {
+  margin: 0;
+}
+.section_yarki--img {
+  width: 635px;
+  height: 391px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.section_yarki--img img {
   width: 100%;
 }
